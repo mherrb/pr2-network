@@ -1,4 +1,4 @@
-nameserver 8.8.8.8
+nameserver 140.93.5.46
 nameserver 10.68.255.1
 nameserver 10.68.0.5
 options timeout:1
