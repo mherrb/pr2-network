@@ -56,3 +56,8 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="d0:50:99:??:??:?
 
 # PCI device 0x8086:0x08b1 (iwlwifi)
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="7c:5c:f8:??:??:?[02468ace]", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"
+
+# KVM (for testing at LAAS)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="52:54:00:6c:62:c7", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="wan0"
+
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="52:54:00:2c:39:2a", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="lan0"
