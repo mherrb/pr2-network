@@ -61,3 +61,8 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="7c:5c:f8:??:??:?
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="52:54:00:6c:62:c7", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="wan0"
 
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="52:54:00:2c:39:2a", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="lan0"
+# KVM (for testing at LAAS)
+
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="52:54:00:86:5b:6a", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="wan0"
+
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="52:54:00:f8:39:af", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="lan0"
